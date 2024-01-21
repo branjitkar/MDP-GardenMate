@@ -22,8 +22,10 @@ The Garden Mate App is a mobile application designed to assist users in managing
 Follow these steps to set up the Garden Mate App on your development environment:
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/branjitkar/MDP-GardenMate.git```
+   git clone https://github.com/branjitkar/MDP-GardenMate.git
+
 2. Open the project in the IDE of your choice. (Android Studio recommended).
 3. Build and run the application from IDE.
 
