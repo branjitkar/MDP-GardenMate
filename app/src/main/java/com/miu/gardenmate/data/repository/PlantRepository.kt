@@ -14,9 +14,12 @@ class PlantRepository private constructor(application: Application) {
 
     init {
         plantDao = GardenMateDatabase(application).getPlanDao()
-        runBlocking {
-            refreshTestData()
-        }
+
+        //this is a test environment code that provides test data in the initial run. Keeping it here for convenience
+        //comment the block below for production
+        //runBlocking {
+        //    refreshTestData()
+        //}
     }
 
     private suspend fun refreshTestData() {
