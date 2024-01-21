@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#FF8FB48E</color>
+    <color name="primary_card_background">#E6DBCF</color>
+    <color name="secondary">#FF7C6A57</color>
+    <color name="accent">#FFFFB6C1</color>
+    <color name="delete">#FFFF5555</color>
+    <color name="days_to_water_urgent">#DF1E1E</color>
+    <color name="days_to_water_normal">#D59F00</color>
+    <color name="days_to_water_safe">#1FA51B</color>
+</resources>

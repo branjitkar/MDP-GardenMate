@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/plantCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_card_background">
+
+        <ImageButton
+            android:id="@+id/plantAvatar"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/white"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_plant_avatar"
+            android:textSize="65sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plantNameView"
+            android:layout_width="133dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="5dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="Plant Name"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/plantNextWateringDateView"
+            app:layout_constraintHorizontal_bias="0.028"
+            app:layout_constraintStart_toEndOf="@+id/plantAvatar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plantNextWateringDayLabel"
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="Days To Water: "
+            app:layout_constraintEnd_toStartOf="@+id/plantNextWateringDateView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plantNextWateringDateView"
+            android:layout_width="43dp"
+            android:layout_height="41dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plantTypeView"
+            android:layout_width="275dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:text="Plant Type"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toEndOf="@+id/plantAvatar"
+            app:layout_constraintTop_toBottomOf="@+id/plantNameView" />
+
+        <ImageButton
+            android:id="@+id/deletePlantBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/delete"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_delete_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/logWateringBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plantAvatar" />
+
+        <ImageButton
+            android:id="@+id/logWateringBtn"
+            android:layout_width="292dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/primary"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_watering_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/deletePlantBtn"
+            app:layout_constraintTop_toBottomOf="@+id/plantAvatar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
